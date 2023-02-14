@@ -13,6 +13,9 @@ test-r:
 run:
 	go run main.go
 
+run-b:
+	bin/app
+
 .PHONY: docker-up-d
 docker-up-d:
 	docker-compose -f docker-compose.yaml up --build -d
