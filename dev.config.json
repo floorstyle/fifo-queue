@@ -1,0 +1,7 @@
+{
+	"GinReleaseMode": false,
+    "HTTPPort": 8082,
+	"RedisHost": "localhost:6379",
+	"RedisDB": 3,
+	"HealthCheckMaxRetries": 1
+}

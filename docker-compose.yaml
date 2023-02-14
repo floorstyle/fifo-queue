@@ -1,0 +1,18 @@
+version: '3.7'
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: misc/deploy/Dockerfile
+    restart: unless-stopped
+    depends_on:
+      - redis
+    ports:
+      - 3000:3000
+
+  redis:
+    image: redis:latest
+    restart: unless-stopped
+    ports:
+      - 6379:6379
